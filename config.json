@@ -14,7 +14,14 @@
             "level": 0
           }
         ],
-        "decryption": "none"
+        "decryption": "none",
+        "fallbacks": [
+          {
+            "path": "/PrinceTrojan",
+            "dest": 10086,
+            "xver": 1
+          }
+        ]
       },
       "streamSettings": {
         "network": "ws",
@@ -46,10 +53,6 @@
         "wsSettings": {
           "path": "/PrinceTrojan"
         }
-      },
-      "sniffing": {
-        "enabled": true,
-        "destOverride": ["http", "tls"]
       }
     }
   ],
@@ -57,15 +60,5 @@
     {
       "protocol": "freedom"
     }
-  ],
-  "routing": {
-    "domainStrategy": "AsIs",
-    "rules": [
-      {
-        "type": "field",
-        "inboundTag": [],
-        "outboundTag": "freedom"
-      }
-    ]
-  }
+  ]
 }
