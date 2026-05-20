@@ -48,10 +48,10 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
+        "network": "tcp",
         "security": "none",
-        "wsSettings": {
-          "path": "/PrinceTrojan"
+        "tcpSettings": {
+          "acceptProxyProtocol": true
         }
       }
     }
